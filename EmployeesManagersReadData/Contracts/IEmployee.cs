@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmployeesManagersReadData.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace EmployeesManagersReadData.Contracts
 {
-    internal interface IEmployee
+    public interface IEmployee
     {
-        void ReadData();
+        List<Employee> ReadData();
         void WriteData();
     }
 }
